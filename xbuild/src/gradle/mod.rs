@@ -165,7 +165,6 @@ pub fn build(env: &BuildEnv, out: &Path) -> Result<()> {
                 Format::Apk => "assemble",
                 _ => unreachable!(),
             }),
-        true,
     )?;
     let output = gradle
         .join("app")
